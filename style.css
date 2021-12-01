@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+}
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.button {
+  border-radius: 0.3125rem;
+  text-decoration: none;
+  background-color: #ffbd59;
+  color: black;
+  padding: 0.8125rem 3rem;
+  font-size: small;
+  font-weight: 700;
+}
+
+.button:hover {
+  color: #ffbd59;
+  background-color: transparent;
+  border: solid 1px #ffbd59;
+  transition: 0.3s;
+}
+
+.center-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.center {
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center-link {
+  text-align: center;
+}
+/* end of utilities */
+
+/* Header Styles  */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+}
+
+.logo {
+  height: 5.625rem;
+  width: auto;
+  padding-left: 3.125rem;
+}
+
+.nav-items {
+  display: flex;
+  flex-basis: 55%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.link-item {
+  color: white;
+  text-decoration: none;
+}
+
+.link-item:hover {
+  color: #ffbd59;
+  transition: 0.1s ease;
+  border-bottom: dotted;
+}
+
+.header {
+  padding-top: 10rem;
+}
+
+h1 {
+  width: 25rem;
+  font-size: 40px;
+  line-height: 46.96px;
+}
+
+.header-text {
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.hero-image {
+  width: 734.66px;
+  height: auto;
+  margin-top: 8rem;
+}
+/* End of header styles */
+
+/* about us section */
+.about-us-text,
+.volunteer-text {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.about-us-container,
+.newsletter-container,
+.partnership-section {
+  background-color: rgb(250, 250, 250);
+}
+
+.about-us-container {
+  padding: 160px 100px 210px 100px;
+}
+
+.about-us-image {
+  width: auto;
+  height: 330px;
+  max-width: 100%;
+  margin-top: -2rem;
+}
+
+.about-us-content {
+  margin-left: 50px;
+}
+
+.about-us-content > p {
+  font-weight: 400;
+}
+
+.about-us-link,
+.partnership-link {
+  color: black;
+  font-weight: 600;
+}
+
+.about-us-link:hover,
+.partnership-link:hover {
+  color: #ffbd59;
+}
+/* end of about us section */
+
+/* events section */
+.events {
+  padding: 150px 91px 150px 100px;
+}
+
+.event-titles {
+  padding-bottom: 56px;
+}
+
+.event-titles span:nth-child(2) {
+  padding: 0 62px 0 51px;
+}
+
+.event-titles > * {
+  font-weight: 400;
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+
+.event-titles > *:hover {
+  font-weight: 700;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.event-cards {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-bottom: 6.25rem;
+}
+
+.event-tag {
+  border-radius: 4px;
+  margin-left: 18px;
+  line-height: 19px;
+  background-color: #99e3b9;
+  padding: 3px 8px;
+  margin: 19px 18px 19px;
+  color: rgba(0, 128, 55, 1);
+}
+
+.img-card {
+  background-color: rgb(238, 238, 238);
+  border-radius: 7px;
+}
+
+.img-card:hover {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+}
+
+.round {
+  border-radius: 0.4375rem 0.4375rem 0 0;
+}
+
+.img-card-body {
+  padding-bottom: 16px;
+  margin-top: -0.4rem;
+}
+
+.img-card-header {
+  margin-top: 0;
+  border-left: 8px solid darkred;
+  padding-left: 10px;
+  padding-top: 20px;
+  font-weight: 800;
+  width: 280px;
+  font-size: 1.2rem;
+}
+
+.img-card-date {
+  padding-left: 18px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.img-card-body p:nth-child(3) {
+  padding-left: 18px;
+  margin-top: 0;
+  font-weight: 400;
+}
+/* end of events section */
+
+/* newsletter section */
+.newsletter-container {
+  padding-top: 171px;
+  padding-bottom: 79px;
+}
+
+.newsletter-link {
+  margin-top: 2.5rem;
+}
+
+.newsletter-container > p {
+  font-weight: 400;
+}
+/* end of newsletter section */
+
+/* volunteer section */
+.volunteer-content {
+  padding-top: 216px;
+}
+
+.volunteer-text {
+  width: 620px;
+}
+
+.volunteer-img {
+  margin-top: 140px;
+  width: 450px;
+  margin-bottom: 150px;
+}
+/* end of volunteer section */
+
+/* partnership section */
+.partnership-section {
+  padding: 100px 0 177px 0;
+}
+
+.partnership-text {
+  padding-top: 32px;
+  padding-bottom: 8px;
+  font-weight: 400;
+}
+/* end of partnership section */
+
+/* footer styles */
+footer {
+  margin-bottom: 0;
+  padding: 40px 221px 66px 101px;
+  display: flex;
+  gap: 150px;
+  background-color: black;
+}
+
+.orange {
+  color: #ffbd59;
+}
+
+.footer-icon {
+  height: auto;
+  width: 20px;
+  padding-right: 10px;
+}
+/* end of footer styles */
