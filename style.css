@@ -300,3 +300,53 @@ footer {
   padding-right: 10px;
 }
 /* end of footer styles */
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .nav-items {
+    flex-basis: 65%;
+  }
+
+  .hero-image {
+    width: 450px;
+  }
+
+  .hero-text {
+    font-size: 32px;
+  }
+
+  .about-us-image {
+    height: 230px;
+  }
+
+  .about-us-content {
+    margin-left: 0;
+  }
+
+  .event-titles > *{
+    font-size: 1.5rem;
+  }
+
+  .img-card img {
+    width: 250px;
+  }
+
+  .volunteer-text {
+    width: 450px;
+    max-width: 100%;
+  }
+
+  footer {
+    padding: 40px 80px 66px 80px;
+    gap: 10px;
+    font-size: .9rem;
+  }
+  
+  .footer-contact {
+    padding-left: 30px
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+} */
