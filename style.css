@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -87,7 +91,7 @@ body {
   padding-top: 10rem;
 }
 
-h1 {
+.hero-text {
   width: 25rem;
   font-size: 40px;
   line-height: 46.96px;
