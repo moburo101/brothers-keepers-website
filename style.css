@@ -89,6 +89,9 @@ body {
 
 .header {
   padding-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .hero-text {
@@ -116,14 +119,12 @@ body {
   font-weight: 400;
 }
 
-.about-us-container,
-.newsletter-container,
-.partnership-section {
-  background-color: rgb(250, 250, 250);
-}
-
 .about-us-container {
+  background-color: rgb(250, 250, 250);
   padding: 160px 100px 210px 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .about-us-image {
@@ -240,6 +241,7 @@ body {
 
 /* newsletter section */
 .newsletter-container {
+  background-color: rgb(250, 250, 250);
   padding-top: 171px;
   padding-bottom: 79px;
 }
@@ -254,6 +256,12 @@ body {
 /* end of newsletter section */
 
 /* volunteer section */
+.volunteer-section{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
 .volunteer-content {
   padding-top: 216px;
 }
@@ -272,6 +280,7 @@ body {
 /* partnership section */
 .partnership-section {
   padding: 100px 0 177px 0;
+  background-color: rgb(250, 250, 250);
 }
 
 .partnership-text {
@@ -304,6 +313,7 @@ footer {
 
 /* Responsive Styles */
 @media screen and (max-width: 1024px) {
+  /* header changes */
   .nav-items {
     flex-basis: 65%;
   }
@@ -315,7 +325,9 @@ footer {
   .hero-text {
     font-size: 32px;
   }
+  /* end of header changes */
 
+  /* about us section changes */
   .about-us-image {
     height: 230px;
   }
@@ -323,7 +335,9 @@ footer {
   .about-us-content {
     margin-left: 0;
   }
+  /* end of about us section changes */
 
+  /* event section changes */
   .event-titles > *{
     font-size: 1.5rem;
   }
@@ -331,12 +345,16 @@ footer {
   .img-card img {
     width: 250px;
   }
+  /* end of event section changes */
 
+  /* volunteer section changes */
   .volunteer-text {
     width: 450px;
     max-width: 100%;
   }
+  /* end of volunteer section changes */
 
+  /* footer changes */
   footer {
     padding: 40px 80px 66px 80px;
     gap: 10px;
@@ -346,7 +364,105 @@ footer {
   .footer-contact {
     padding-left: 30px
   }
+  /* end of footer changes */
 }
 
-/* @media screen and (max-width: 768px) {
-} */
+@media screen and (max-width: 768px) {
+  /* header changes */
+  .nav-items{
+    flex-basis: 75%;
+  }
+
+.header{
+  display: initial;
+  text-align: center;
+}
+
+.hero-text{
+  width: initial;
+}
+
+.header-text{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* end of header changes */
+
+/* about us section changes */
+.about-us-container{
+  display: inherit;
+  text-align: center;
+  padding: 80px 50px 105px 50px;
+}
+
+.about-us-image{
+  display: block;
+  margin-top: initial;
+  margin: 10px auto;
+}
+/* end of about us section changes */
+
+/* event section changes */
+.event-titles > *{
+  font-size: 1.2rem;
+}
+
+.event-titles{
+  padding-bottom: 20px;
+}
+
+.img-card img {
+  width: 180px;
+}
+
+.img-card{
+  width: 180px;
+}
+
+.img-card-header{
+  width: initial;
+}
+
+.events{
+  padding: 75px 45px 75px 50px;
+}
+/* end of event section changes */
+
+/* newsletter section changes */
+.newsletter-container{
+  padding: 150px 50px 70px 50px;
+}
+/* end of newsletter section changes */
+
+/* volunteer section changes */
+.volunteer-section{
+  display: initial;
+  text-align: center;
+}
+
+.volunteer-content{
+  padding-top: 50px;
+}
+
+.volunteer-text{
+margin-right: 0;
+}
+
+.volunteer-img{
+  display: block;
+  margin: 20px auto;
+}
+/* end of volunteer section changes */
+
+/* footer changes */
+footer {
+  padding: 20px 40px 33px 40px;
+  gap: 50px;
+  font-size: 14px;
+}
+
+.footer-contact {
+  padding-left: 14px
+}
+/* end of footer changes */
+}
