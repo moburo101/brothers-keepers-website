@@ -313,7 +313,7 @@ footer {
 
 /* Responsive Styles */
 @media screen and (max-width: 1024px) {
-  /* header changes */
+  /* header styles */
   .nav-items {
     flex-basis: 65%;
   }
@@ -325,9 +325,9 @@ footer {
   .hero-text {
     font-size: 32px;
   }
-  /* end of header changes */
+  /* end of header styles */
 
-  /* about us section changes */
+  /* about us section styles */
   .about-us-image {
     height: 230px;
   }
@@ -335,9 +335,9 @@ footer {
   .about-us-content {
     margin-left: 0;
   }
-  /* end of about us section changes */
+  /* end of about us section styles */
 
-  /* event section changes */
+  /* event section styles */
   .event-titles > *{
     font-size: 1.5rem;
   }
@@ -345,16 +345,16 @@ footer {
   .img-card img {
     width: 250px;
   }
-  /* end of event section changes */
+  /* end of event section styles */
 
-  /* volunteer section changes */
+  /* volunteer section styles */
   .volunteer-text {
     width: 450px;
     max-width: 100%;
   }
-  /* end of volunteer section changes */
+  /* end of volunteer section styles */
 
-  /* footer changes */
+  /* footer styles */
   footer {
     padding: 40px 80px 66px 80px;
     gap: 10px;
@@ -364,14 +364,18 @@ footer {
   .footer-contact {
     padding-left: 30px
   }
-  /* end of footer changes */
+  /* end of footer styles */
 }
 
 @media screen and (max-width: 768px) {
-  /* header changes */
+  /* header styles */
   .nav-items{
     flex-basis: 75%;
   }
+
+  
+  /*=====  Your navigation tab does not look great. Tips: reduce the reach out button and remove padding left   ======*/  
+  
 
 .header{
   display: initial;
@@ -383,12 +387,13 @@ footer {
 }
 
 .header-text{
+  /*=====  put this padding in one line  ======*/
   padding-left: 50px;
   padding-right: 50px;
 }
-/* end of header changes */
+/* end of header styles */
 
-/* about us section changes */
+/* about us section styles */
 .about-us-container{
   display: inherit;
   text-align: center;
@@ -400,9 +405,9 @@ footer {
   margin-top: initial;
   margin: 10px auto;
 }
-/* end of about us section changes */
+/* end of about us section styles */
 
-/* event section changes */
+/* event section styles */
 .event-titles > *{
   font-size: 1.2rem;
 }
@@ -419,22 +424,28 @@ footer {
   width: 180px;
 }
 
+.img-card-body{
+  /*===== 1. Reduce font size of elements.  ======*/  
+}
+
 .img-card-header{
+  /*===== Why is this width being used? Why is the title constricted by a width in the first place?  ======*/  
+  /*===== 2. Remove font-weight, maintain original font-weight value.  ======*/  
   width: initial;
 }
 
 .events{
   padding: 75px 45px 75px 50px;
 }
-/* end of event section changes */
+/* end of event section styles */
 
-/* newsletter section changes */
+/* newsletter section styles */
 .newsletter-container{
   padding: 150px 50px 70px 50px;
 }
-/* end of newsletter section changes */
+/* end of newsletter section styles */
 
-/* volunteer section changes */
+/* volunteer section styles */
 .volunteer-section{
   display: initial;
   text-align: center;
@@ -445,6 +456,7 @@ footer {
 }
 
 .volunteer-text{
+  /*=====  Place this content in the center.   ======*/
 margin-right: 0;
 }
 
@@ -452,9 +464,9 @@ margin-right: 0;
   display: block;
   margin: 20px auto;
 }
-/* end of volunteer section changes */
+/* end of volunteer section styles */
 
-/* footer changes */
+/* footer styles */
 footer {
   padding: 20px 40px 33px 40px;
   gap: 50px;
@@ -464,5 +476,5 @@ footer {
 .footer-contact {
   padding-left: 14px
 }
-/* end of footer changes */
+/* end of footer styles */
 }
