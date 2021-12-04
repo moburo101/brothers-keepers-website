@@ -291,7 +291,7 @@ body {
 /* end of partnership section */
 
 /* footer styles */
-footer {
+.footer {
   margin-bottom: 0;
   padding: 40px 221px 66px 101px;
   display: flex;
@@ -355,9 +355,9 @@ footer {
   /* end of volunteer section styles */
 
   /* footer styles */
-  footer {
+  .footer {
     padding: 40px 80px 66px 80px;
-    gap: 10px;
+    gap: 50px;
     font-size: .9rem;
   }
   
@@ -370,12 +370,12 @@ footer {
 @media screen and (max-width: 768px) {
   /* header styles */
   .nav-items{
-    flex-basis: 75%;
+    flex-basis: 80%;
   }
 
-  
-  /*=====  Your navigation tab does not look great. Tips: reduce the reach out button and remove padding left   ======*/  
-  
+.logo{
+  padding-left: 10px;
+}
 
 .header{
   display: initial;
@@ -387,9 +387,7 @@ footer {
 }
 
 .header-text{
-  /*=====  put this padding in one line  ======*/
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0 50px;
 }
 /* end of header styles */
 
@@ -424,13 +422,7 @@ footer {
   width: 180px;
 }
 
-.img-card-body{
-  /*===== 1. Reduce font size of elements.  ======*/  
-}
-
 .img-card-header{
-  /*===== Why is this width being used? Why is the title constricted by a width in the first place?  ======*/  
-  /*===== 2. Remove font-weight, maintain original font-weight value.  ======*/  
   width: initial;
 }
 
@@ -453,11 +445,12 @@ footer {
 
 .volunteer-content{
   padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .volunteer-text{
-  /*=====  Place this content in the center.   ======*/
-margin-right: 0;
+  width: initial;
 }
 
 .volunteer-img{
@@ -467,14 +460,51 @@ margin-right: 0;
 /* end of volunteer section styles */
 
 /* footer styles */
-footer {
+.footer {
   padding: 20px 40px 33px 40px;
   gap: 50px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .footer-contact {
   padding-left: 14px
 }
 /* end of footer styles */
+}
+
+@media screen and (max-width: 742px) {
+  .footer{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* header styles */
+  .logo{
+    padding-left: 0;
+  }
+
+  .nav-items{
+    justify-content: end;
+    gap: 12px;
+    flex-basis: 95%;
+  }
+
+  .responsive{
+    padding: 10px 20px;
+  }
+  /* End of header styles */
+
+  /* events section styles */
+  .event-cards{
+    gap: 10px;
+  }
+  /* End of events section styles */
+
+  /* footer styles */
+  .footer{
+    font-size: 10px;
+    gap: 15px;
+  }
+  /* end of footer styles */
 }
