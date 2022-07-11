@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
@@ -19,13 +20,14 @@
         alt="Brother Keepers Logo"
         class="logo"
       />
-      <ul class="nav-items">
-        <li><a class="link-item" href="#home">Home</a></li>
-        <li><a class="link-item" href="#events">Events</a></li>
-        <li><a class="link-item" href="#newsletter">Newsletter</a></li>
-        <li><a class="link-item" href="#volunteer">Volunteer</a></li>
-        <li><a class="button responsive" href="#">Reach out</a></li>
-      </ul>
+      <div class="nav-items" id="navItems">
+        <a class="link-item" href="#home">Home</a>
+        <a class="link-item" href="#events">Events</a>
+        <a class="link-item" href="#newsletter">Newsletter</a>
+        <a class="link-item" href="#volunteer">Volunteer</a>
+        <a class="button responsive" href="#">Reach out</a>
+        <a href="javascript:void(0);" class="icon"><i class="fa fa-bars fa-2x"></i></a>
+      </div>
     </nav>
 
     <header id="home" class="container header">
@@ -219,5 +221,6 @@
         </div>
       </nav>
       </footer>
+      <script src="script.js"></script>
     </body>
     </html>
