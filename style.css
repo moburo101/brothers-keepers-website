@@ -549,6 +549,7 @@ body {
   /* events section styles */
   .event-cards{
     gap: 10px;
+    display: initial;
   }
   /* End of events section styles */
 

@@ -3,7 +3,7 @@ var nav = document.querySelector(".nav-items");
 var items = document.querySelector(".nav-items a")
 
 burger.addEventListener("click", function(){
-    nav.style.display = "block";
+    nav.style.display = '';
     navBar()
 });
 
